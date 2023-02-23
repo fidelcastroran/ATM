@@ -20,7 +20,7 @@ class bank {
         }
     }
 }
-let aathi = new bank(5000)
+let fidel = new bank(5000)
 // castro.withdrawl(3000)
 
 // castro.deposit(3000)
@@ -32,13 +32,13 @@ let depositbtn = document.querySelector('.depositbtn')
 let withdrawlbtn = document.querySelector('.withdrawlbtn')
 
 withdrawlbtn.onclick = () => {
-    aathi.withdrawl(Number(withdrawlinput.value))
+    fidel.withdrawl(Number(withdrawlinput.value))
     withdrawlinput.value = ""
-    balance.innerText = `Your Account Balance ₹${aathi.balance}  `
+    balance.innerText = `Your Account Balance ₹${fidel.balance}  `
 }
 depositbtn.onclick = () => {
-    aathi.deposit(Number(depositinput.value))
+    fidel.deposit(Number(depositinput.value))
     depositinput.value = ""
-    balance.innerText = `Your Account Balance ₹${aathi.balance} 
+    balance.innerText = `Your Account Balance ₹${fidel.balance} 
                               `}
 // console.log(castro.balance)
